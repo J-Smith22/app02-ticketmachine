@@ -24,17 +24,5 @@ public enum Coin
         return value;
     }
    
-  
-
-
-
-
-
-
-
-
-
-
-
 
 }

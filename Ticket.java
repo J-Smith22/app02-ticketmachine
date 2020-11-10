@@ -28,10 +28,19 @@ public class Ticket
      
      issueDateTime = new Date();
     }
+    public String returnDestination()
+    {
+        return destination;
+    }
+    public int returnPrice()
+    {
+        return price;
+    }
+    public String toString()
+    {
+        return destination+" " + price+ " " + issueDateTime;
     
-    /**
-     * 
-     */
+    }
     public void print()
     {
          System.out.println("Ticket" + destination + "Price : " + price +

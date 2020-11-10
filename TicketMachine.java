@@ -11,7 +11,7 @@
  * 
  * Modified by Joshua Smith
  */
-public class TicketMachine extends TicketMachine 
+public class TicketMachine
 {
     // The price of a ticket from this machine.
     private int price;
@@ -66,17 +66,9 @@ public class TicketMachine extends TicketMachine
      * Receive an amount of money from a customer.
      * Check that the amount is sensible.
      */
-    public void insertMoney(int amount)
+    public void insertMoney(Coin Value)
     {
-        if(amount > 0) 
-        {
-            balance = balance + amount;
-        }
-        else 
-        {
-            System.out.println("Use a positive amount rather than: " +
-                               amount);
-        }
+       balance = balance + Value.getValue();
     }
 
     public void selectAylesburyTicket()
@@ -136,4 +128,5 @@ public class TicketMachine extends TicketMachine
         balance = 0;
         return amountToRefund;
     }
+    
 }
